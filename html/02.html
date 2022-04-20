@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Date types</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="../index.html" class="button">Home</a>
+        </nav>
+        <hr>
+        <h1>2. Урок.</h1>
+        <h2>'Date types'</h2>
+        <div class="Editable_editable__lMzs1">
+            <h1>Типы данных</h1>
+            <p>В Javascript есть несколько типов данных:</p>
+            <h2>Числа</h2>
+            <p>Числа могут быть целыми (<code>42</code>, <code>-5</code>) и дробными (<code>12.67</code>,
+                <code>-0.2</code>).
+            </p>
+            <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> age </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">37</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> x </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">-</span><span class="token" style="color: rgb(54, 172, 170);">0.25</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+            <h2>Строки</h2>
+            <p>Строки используются для текстовой информации.</p>
+            <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> name </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'Misha'</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> message </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'Hello, world!'</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+            <h2>Boolean</h2>
+            <p>Булев (логический) тип состоит из 2 значений <code>true</code> и <code>false</code>. Такие значения
+                используются для проверки условий в конструкции <code>if</code> и циклах.</p>
+            <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isMarried </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">true</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> hasACat </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">false</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+            <h2>null и undefined</h2>
+            <p>Также есть ещё два пустых значения:</p>
+            <ul>
+                <li><code>null</code> мы используем, когда переменная пока пустая, но позже будет содержать
+                    какое-то значение</li>
+                <li><code>undefined</code> - это неопределённое значение, чаще всего получается в результате
+                    ошибки в программе.</li>
+            </ul>
+            <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// Если у тебя пока нет партнёра, но в принципе может быть</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">let</span><span> partner </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token null nil" style="color: rgb(0, 0, 255);">null</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// Тут undefined, поскольку значение не определено</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">let</span><span> value</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+            <h2>Проверка типа</h2>
+            <p>Оператор <code>typeof</code> позволяет узнать тип данных переменной или целого выражения.</p>
+            <p>Тип - это строка <code>'number'</code>, <code>'string'</code>, <code>'boolean'</code>,
+                <code>'undefined'</code>
+                для простых
+                типов либо <code>'object'</code>, <code>'function'</code>, <code>'bigint'</code>, <code>'symbol'</code>
+                для
+                более сложных,
+                которые мы изучим позже.
+            </p>
+            <p>По историческим причинам <code>typeof null</code> даёт строку <code>'object'</code>.</p>
+            <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> name </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'Misha'</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(0, 0, 255);">typeof</span><span> name</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'string'</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> age </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">37</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(0, 0, 255);">typeof</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>age </span><span class="token" style="color: rgb(57, 58, 52);">+</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">1</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'number'</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isMarried </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">true</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(0, 0, 255);">typeof</span><span> isMarried</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'boolean'</span><span>
+</span>
+<span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(0, 0, 255);">typeof</span><span> </span><span class="token nil" style="color: rgb(0, 0, 255);">undefined</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'undefined'</span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(0, 0, 255);">typeof</span><span> </span><span class="token null nil" style="color: rgb(0, 0, 255);">null</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'object'</span></code></div></pre>
+        </div>
+
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

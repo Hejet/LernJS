@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Boolean</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="../index.html" class="button">Home</a>
+        </nav>
+        <hr>
+        <h1>6. Урок.</h1>
+        <h2>'Boolean'</h2>
+        <div class="Theory_container__SY_J4">
+            <div class="Theory_content__M0Nkm">
+                <div class="Theory_playlistContent__qFm_F mb-16">
+                </div>
+                <div class="Editable_editable__lMzs1">
+                    <h1>Boolean</h1>
+                    <p>Когда мы проверяем выполняется ли какое-то условие, то получаем один из двух
+                        ответов <code>да, верно</code> или <code>нет, не верно</code>. Для хранения результатов таких
+                        проверок
+                        в Javascript есть тип данных <code>Boolean</code>, который состоит всего из 2 значений
+                        <code>true</code> и <code>false</code> (правда и ложь).
+                    </p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isAdult </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">true</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> hasEnoughMoney </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">false</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Сравнение чисел</h2>
+                    <p>Результат <strong>булевого</strong> типа часто получается в результат сравнения чисел.</p>
+                    <ul>
+                        <li><code>a &gt; b</code> - даёт <code>true</code>, если <code>a</code> больше <code>b</code>
+                        </li>
+                        <li><code>a &gt;= b</code> - даёт <code>true</code>, если <code>a</code> больше или равно
+                            <code>b</code>
+                        </li>
+                        <li><code>a === b</code> - даёт <code>true</code>, если <code>a</code> равно <code>b</code>
+                            (одинаковые
+                            значения)</li>
+                        <li><code>a !== b</code> - даёт <code>true</code>, если <code>a</code> НЕ равно <code>b</code>
+                            (разные
+                            значения)</li>
+                        <li><code>a &lt; b</code> - даёт <code>true</code>, если <code>a</code> меньше <code>b</code>
+                        </li>
+                        <li><code>a &lt;= b</code> - даёт <code>true</code>, если <code>a</code> меньше или равно
+                            <code>b</code>
+                        </li>
+                    </ul>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>
+</span><span>  </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">&gt;</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// false</span><span>
+</span><span>  </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">&gt;=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// true</span><span>
+</span><span>  </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">===</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// true</span><span>
+</span><span>  </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">!==</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// false</span><span>
+</span><span>  </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">&lt;</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// false</span><span>
+</span><span>  </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">&lt;=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">2</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// true</span><span>
+</span><span></span><span class="token" style="color: rgb(57, 58, 52);">)</span></code></div></pre>
+                    <h2>Сравнение строк</h2>
+                    <p>Строки сравниваются в алфавитном порядке:</p>
+                    <ul>
+                        <li>сначала первая буква с первой</li>
+                        <li>если первые буквы одинаковые, то сравниваются вторые</li>
+                        <li>и так далее</li>
+                        <li>все большие буквы идут раньше маленьких поэтому <code>'a' &gt; 'Z'</code></li>
+                    </ul>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>
+</span><span>  </span><span class="token" style="color: rgb(163, 21, 21);">'b'</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">&gt;</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'a'</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// true</span><span>
+</span><span>  </span><span class="token" style="color: rgb(163, 21, 21);">'B'</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">&gt;</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'a'</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// false</span><span>
+</span><span>  </span><span class="token" style="color: rgb(163, 21, 21);">'abc'</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">&gt;</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'aba'</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// true</span><span>
+</span><span>  </span><span class="token" style="color: rgb(163, 21, 21);">'a'</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">===</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'A'</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// false </span><span>
+</span><span></span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Оператор отрицания</h2>
+                    <p>Чтобы получить значение противоположное результату проверки можно использовать
+                        оператор <strong>логического отрицания</strong> <code>!</code></p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isAdult </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">true</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isNotAdult </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">!</span><span>isAdult</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>isAdult</span><span class="token" style="color: rgb(57, 58, 52);">,</span><span> isNotAdult</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// true false</span></code></div></pre>
+                    <p>Чтобы применить оператор отрицания к целому выражению нужно воспользоваться
+                        скобками</p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isNotAdult </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">!</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>age </span><span class="token" style="color: rgb(57, 58, 52);">&gt;=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">18</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Логическое И</h2>
+                    <p>Если мы хотим проверить, что выполняются сразу 2 условия мы можем использовать
+                        оператор <code>&amp;&amp;</code> - <strong>логическое И</strong>. Он даёт <code>true</code>
+                        только если
+                        обе его части
+                        верны.</p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isAdult </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">true</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> hasEnoughMoney </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">true</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// если хотя бы одно из условий будет false, то и результат будет false</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> canBuy </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> isAdult </span><span class="token" style="color: rgb(57, 58, 52);">&amp;&amp;</span><span> hasEnoughMoney</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Логическое ИЛИ</h2>
+                    <p>Иногда достаточно выполнения одного из двух условий, тогда мы используем
+                        оператор <code>||</code> - <strong>логическое ИЛИ</strong>. Он даёт <code>true</code> если хотя
+                        бы одна
+                        часть равна
+                        <code>true</code>.
+                    </p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> hasEnoughCash </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">true</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> hasCreditLimit </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">false</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// достаточно одного true  </span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> canBuy </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> hasEnoughCash </span><span class="token" style="color: rgb(57, 58, 52);">||</span><span> hasCreditLimit</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Группировка условий</h2>
+                    <p>Когда мы объединяем более 2 условий, то можно записать несколько логических
+                        операторов.</p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> isWarm </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> isRed </span><span class="token" style="color: rgb(57, 58, 52);">||</span><span> isOrange </span><span class="token" style="color: rgb(57, 58, 52);">||</span><span> isYellow</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> canBuy </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> isAdult </span><span class="token" style="color: rgb(57, 58, 52);">&amp;&amp;</span><span> hasEnoughMoney </span><span class="token" style="color: rgb(57, 58, 52);">&amp;&amp;</span><span> isProductAvailable</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <p>Если же мы хотим использовать разные операторы для объединения, лучше
+                        воспользоваться скобками</p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> canBuy </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> isAdult </span><span class="token" style="color: rgb(57, 58, 52);">&amp;&amp;</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>hasEnoughCash </span><span class="token" style="color: rgb(57, 58, 52);">||</span><span> hasCreditLimit</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                </div>
+            </div>
+            <div class="Theory_playlist__HDYZ2"></div>
+        </div>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

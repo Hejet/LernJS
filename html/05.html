@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Strings</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="../index.html" class="button">Home</a>
+        </nav>
+        <hr>
+        <h1>5. Урок.</h1>
+        <h2>'Strings'</h2>
+        <div class="Theory_content__M0Nkm">
+            <div class="Theory_playlistContent__qFm_F mb-16">
+                <h4 class="Theory_topicTitle__pLMTo">Strings</h4>
+                <ul>
+                    <li>
+                        <div class="PlayList_playListItem__c7Nvq PlayList_isActive__xxbmP">
+                            <div class="PlayList_playListIcon__IY0Hn PlayList_isActive__xxbmP"><svg
+                                    class="sc-802a72a1-0 bVPhXO small" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor"></path>
+                                </svg></div><button type="button" class="PlayList_playListItemTitle__w5TuH">String
+                                basics</button>
+                            <div class="PlayList_likeContainer__zQKZu">
+                                <div class="sc-420f707d-1 bAWimc"><button class="sc-420f707d-0 grvnnJ"><svg width="24"
+                                            height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            class="sc-802a72a1-0 bVPhXO">
+                                            <path
+                                                d="M13.7109 8.79647L13.4607 10H14.69H21C21.5477 10 22 10.4523 22 11V13C22 13.1218 21.9784 13.2348 21.9336 13.353L18.9208 20.3862L18.9207 20.3862L18.9169 20.3954C18.7688 20.7508 18.4177 21 18 21H9C8.45228 21 8 20.5477 8 20V10C8 9.7222 8.10924 9.48003 8.28736 9.30673L8.29254 9.30168L8.29764 9.29657L14.1739 3.4114L14.5229 3.75711C14.5233 3.7575 14.5237 3.75789 14.5241 3.75828C14.6064 3.84118 14.6602 3.95559 14.6688 4.07612L14.6496 4.2811L13.7109 8.79647ZM4 11V21H2V11H4Z"
+                                                stroke-width="2"></path>
+                                        </svg></button><button class="sc-420f707d-0 grvnnJ edge-button"><svg width="24"
+                                            height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            class="sc-802a72a1-0 bVPhXO">
+                                            <path
+                                                d="M5.07921 4.61376L5.07926 4.61378L5.08308 4.60462C5.23115 4.24923 5.58233 4 6 4H15C15.5477 4 16 4.45228 16 5V15C16 15.2791 15.8894 15.5264 15.7129 15.7029L9.82666 21.5891L9.47711 21.2429C9.47671 21.2425 9.47631 21.2421 9.47591 21.2417C9.39359 21.1588 9.33979 21.0444 9.33121 20.9239L9.35042 20.7189L10.2891 16.2035L10.5393 15H9.31H3C2.45228 15 2 14.5477 2 14V12C2 11.8783 2.02162 11.7652 2.06638 11.647L5.07921 4.61376ZM22 14H20V4H22V14Z"
+                                                stroke-width="2"></path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="Editable_editable__lMzs1">
+                <h1>Строки</h1>
+                <p>Строки используются для записи текстовых данных. Их можно записать в одинарных
+                    кавычках (<code>'Misha'</code>, <code>'Hello, world!'</code>) и в обратных кавычках, где можно
+                    вставлять выражения и переносы срок. Вставка переменных в строку в обратных
+                    кавычках называется <code>интерполяция</code>.</p>
+                <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> a </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">5</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> b </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">3</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> name </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'Misha'</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> message </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token template-string template-punctuation" style="color: rgb(163, 21, 21);">`</span><span class="token template-string" style="color: rgb(163, 21, 21);">
+</span><span class="token template-string" style="color: rgb(163, 21, 21);">  Hi, </span><span class="token template-string interpolation interpolation-punctuation" style="color: rgb(57, 58, 52);">${</span><span class="token template-string interpolation">name</span><span class="token template-string interpolation interpolation-punctuation" style="color: rgb(57, 58, 52);">}</span><span class="token template-string" style="color: rgb(163, 21, 21);">!
+</span><span class="token template-string" style="color: rgb(163, 21, 21);">  Welcom to the team.
+</span><span class="token template-string" style="color: rgb(163, 21, 21);">  a + b = </span><span class="token template-string interpolation interpolation-punctuation" style="color: rgb(57, 58, 52);">${</span><span class="token template-string interpolation">a </span><span class="token template-string interpolation" style="color: rgb(57, 58, 52);">+</span><span class="token template-string interpolation"> b</span><span class="token template-string interpolation interpolation-punctuation" style="color: rgb(57, 58, 52);">}</span><span class="token template-string" style="color: rgb(163, 21, 21);">
+</span><span class="token template-string" style="color: rgb(163, 21, 21);"></span><span class="token template-string template-punctuation" style="color: rgb(163, 21, 21);">`</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// Вместо переменных и выраений подставятся их значения</span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>message</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                <p>Можно ещё использовать для строк двойные кавычки (<code>"Misha"</code>,
+                    <code>"Hello, world!"</code>).
+                    Они работают так же как одинарные, и на практике их обычно не используют.
+                </p>
+                <h2>Конкатенация</h2>
+                <p>В Javascript строки можно складывать друг с другом и с данными других типов, это
+                    называется <code>конкатенация</code>. В результате конкатенации получается новая строка
+                    "склеенная" из двух частей</p>
+                <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(163, 21, 21);">'Hello,'</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">+</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'world!'</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'Hello,world!'</span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(163, 21, 21);">'My age is '</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">+</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">12</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'My age is 12'</span></code></div></pre>
+                <h2>Пустая строка</h2>
+                <p><strong>Пустая срока</strong> - это строка в которой нет ни одного символа. Записывается как
+                    <code>''</code> (две кавычки подряд). Используется чтобы постепенно дополнять значение в
+                    переменной строковыми данными
+                </p>
+                <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">let</span><span> phrase </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">''</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span>phare </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> phrase </span><span class="token" style="color: rgb(57, 58, 52);">+</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'Hello'</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'Hello'</span><span>
+</span><span>phare </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> phrase </span><span class="token" style="color: rgb(57, 58, 52);">+</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">', '</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'Hello, '</span><span>
+</span><span>phare </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> phrase </span><span class="token" style="color: rgb(57, 58, 52);">+</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'World!'</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// 'Hello, World!';</span></code></div></pre>
+            </div>
+        </div>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

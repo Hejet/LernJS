@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>Main concepts</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="../index.html" class="button">Home</a>
+        </nav>
+        <hr>
+        <h1>1. Урок.</h1>
+        <h2>'Main concepts'</h2>
+        <div>
+            <div class="Theory_content__M0Nkm">
+                <div class="Editable_editable__lMzs1">
+                    <h1>Основные понятия</h1>
+                    <p>Обычно <code>компьютерная программа</code> - это текстовый файл, написанный на каком-то
+                        языке программирования. Для того чтобы компьютер понял, что мы от него хотим, мы
+                        должны следовать определённым правилам языка.</p>
+                    <h2>Команды</h2>
+                    <p>Программы в Javascript состоят из <code>команд</code>. В конце команды мы ставим <code>;</code>,
+                        чтобы
+                        компьютер точно знал, где заканчивается команда.</p>
+                    <p>Например, существует метод <code>console.log()</code>, который используется для вывода
+                        сообщений в консоль. Эта команда выведет в консоль <code>Hello, world!</code>:</p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(163, 21, 21);">'Hello, world!'</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Комментарии</h2>
+                    <p><strong>Комментарий</strong> - это пояснительный текст, который не выполняется компьютером, а
+                        просто помогает программисту лучше понять, как работает программа. Он начинается
+                        с <code>//</code> и продолжается до конца строки.</p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// Печатаем в консоли фразу 'Hello, world!' </span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(163, 21, 21);">'Hello, world!'</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Литералы</h2>
+                    <p>Обычно программы работают с <code>данными</code>. Это могут быть, например, какие-то числа
+                        или текст. Для записи данных в программе используются <code>литералы</code>.</p>
+                    <ul>
+                        <li><strong>Числа</strong> состоят из цифр и пишутся без кавычек (<code>42</code>,
+                            <code>-5</code>,
+                            <code>1000000</code>)
+                        </li>
+                        <li><strong>Строки</strong> пишутся в кавычках (<code>'Misha'</code>,
+                            <code>'Hello, world!'</code>)
+                        </li>
+                    </ul>
+                    <h2>Переменные</h2>
+                    <p>Для хранения данных используются <code>переменные</code>. По сути это коробка с названием,
+                        в которую мы кладём какие-то данные. Чтобы записать в переменную значение,
+                        мы используем оператор <code>=</code>. Есть два типа переменных: изменяемые (объявленные с
+                        <code>let</code>) и неизменяемые (объявленные с <code>const</code>).
+                    </p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// В эту переменную позже можно положить другое значение</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">let</span><span> age </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">37</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span>age </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">38</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span>age</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// мы увидим 38</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// В эту переменную положить другое значение не получится</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> name </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'Misha'</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span>name </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(163, 21, 21);">'Petya'</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span> </span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// будет ошибка</span></code></div></pre>
+                    <h2>Именование переменных</h2>
+                    <p>Название переменной может состоять из английских букв (больших и маленьких),
+                        цифр и знака <code>_</code>, но не может начинаться с цифры. Если в названии будет
+                        несколько слов, то мы пишем их слитно (без пробелов) и первое слово будет
+                        начинаться с маленькой буквы, а остальные - с большой.</p>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// Хорошее название</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> cookiePrice </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">15</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// Плохое название</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 0, 255);">const</span><span> cookie_price </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">15</span><span class="token" style="color: rgb(57, 58, 52);">;</span></code></div></pre>
+                    <h2>Выражения</h2>
+                    <p>Если нам нужно вычислить какое-то значение на основе данных (<code>переменных</code>
+                        или <code>литералов</code>), мы объединим их <code>операторами</code> и получим
+                        <code>выражение</code>.
+                        Чтобы
+                        вычислить <code>значение выражения</code>, нужно:
+                    </p>
+                    <ul>
+                        <li>подставить вместо переменных их значения</li>
+                        <li>произвести все вычисления.</li>
+                    </ul>
+                    <pre><div style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 14px; line-height: 1.2em; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto; border: none; background-color: white;"><code class="language-js" style="color: rgb(57, 58, 52); font-family: Consolas, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; font-size: 0.9em; line-height: 1.2em; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(0, 0, 255);">const</span><span> cookiePrice </span><span class="token" style="color: rgb(57, 58, 52);">=</span><span> </span><span class="token" style="color: rgb(54, 172, 170);">15</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span>
+<span></span><span class="token console" style="color: rgb(43, 145, 175);">console</span><span class="token" style="color: rgb(57, 58, 52);">.</span><span class="token method property-access" style="color: rgb(57, 58, 52);">log</span><span class="token" style="color: rgb(57, 58, 52);">(</span><span class="token" style="color: rgb(54, 172, 170);">20</span><span> </span><span class="token" style="color: rgb(57, 58, 52);">-</span><span> cookiePrice</span><span class="token" style="color: rgb(57, 58, 52);">)</span><span class="token" style="color: rgb(57, 58, 52);">;</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// Сначала заменим cookiePrice на 15</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// получим 20 - 15</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// результат 5</span><span>
+</span><span></span><span class="token" style="color: rgb(0, 128, 0); font-style: italic;">// В консоли выведется 5</span></code></div></pre>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
